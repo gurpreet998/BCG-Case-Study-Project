@@ -1,6 +1,3 @@
-# BCG-Case-Study-Project
-A case study project for BCG
-
 # 📊 Retail Sales & Customer Analysis – Power BI Case Study
 
 An interactive **Power BI dashboard project** designed to analyze sales performance and customer behavior for **FurniturePro & Co., a retail company**.
@@ -26,103 +23,125 @@ The solution was developed using **Power BI with Power Query transformations and
 
 ---
 
-# 🧱 Data Preparation (Power Query ETL)
-
-The data transformation pipeline was implemented entirely in **Power Query**.
-
-Key steps included:
-
-* Cleaning missing and inconsistent values
-* Creating calculated columns for relationships
-* Merging multiple datasets
-* Structuring the data model for reporting
-
-All transformations were completed inside **Power BI's Power Query Editor**.
-
----
-
 # 📈 Key Performance Indicators (KPIs)
 
-The dashboard calculates several important business metrics:
+The dashboard calculates several important business metrics.
 
-* **Total Sales** = Sales – Returns
-* **% Target Achieved**
-* **Profit Margin %** = Profit / Sales Amount
-* **Sales Growth vs Previous Year**
+### Overall Business Metrics
 
-These KPIs help evaluate overall company performance.
+* **Total Sales:** **2.12M**
+* **Target Achievement:** **104.08%**
+* **Profit Margin:** **12.47%**
+* **Year-over-Year Growth:** **45.1%**
 
----
-
-# 📊 Dashboard Views
-
-The project consists of two major analytical dashboards.
+These KPIs provide a quick snapshot of overall company performance.
 
 ---
 
-# 1️⃣ Sales Performance Dashboard
+# 📊 Sales Performance Dashboard
 
-This dashboard analyzes the company's **sales trends and profitability**.
-
-### 📅 Sales Trend Analysis
-
-* Sales performance across **4 years**
-* Year-over-year growth comparison
-* Monthly and quarterly performance
-
-### 🌎 Regional Performance
-
-Sales breakdown by:
-
-* Region
-* State
-* City
-
-Helps identify **high-performing and underperforming areas**.
-
-### 🛍 Category & Segment Analysis
-
-Sales split across:
-
-* Product Categories
-* Customer Segments
-
-Helps determine which product categories drive the most revenue.
-
-### 🎯 Target Achievement Analysis
-
-Highlights:
-
-* Regions achieving their sales targets
-* Regions falling short of targets
-
-Enables **performance tracking vs business goals**.
+This dashboard analyzes the company's **sales trends and profitability across regions, categories, and customer segments**.
 
 ---
 
-# 🔮 What-If Profit Analysis
+## 📅 4-Year Sales Trend
 
-A **What-If parameter** allows users to simulate discount percentages across different segments.
+The company has shown steady growth over the years:
 
-Users can input a **discount %**, and the dashboard dynamically calculates:
+| Year | Sales     |
+| ---- | --------- |
+| 2018 | **0.46M** |
+| 2019 | **0.43M** |
+| 2020 | **0.57M** |
+| 2021 | **0.66M** |
 
-* Expected Profit %
-* Profit impact across segments
-
-This helps evaluate **pricing and discount strategies**.
+The **largest increase occurred between 2020 and 2021**, indicating strong business recovery and growth.
 
 ---
 
-# 📊 Pareto Analysis (80/20 Rule)
+## 🛍 Sales by Category
 
-A Pareto visual shows:
+| Category        | Sales     |
+| --------------- | --------- |
+| Technology      | **0.76M** |
+| Furniture       | **0.68M** |
+| Office Supplies | **0.67M** |
 
-* What percentage of total sales comes from
-* The **top X% of customers**
+**Technology products generate the highest revenue**, slightly outperforming other categories.
 
-Users can dynamically choose the **customer percentage** to see their contribution to sales.
+---
 
-This helps identify **high-value customers** driving the majority of revenue.
+## 👥 Sales by Customer Segment
+
+| Segment     | Sales     |
+| ----------- | --------- |
+| Consumer    | **1.06M** |
+| Corporate   | **0.65M** |
+| Home Office | **0.41M** |
+
+The **Consumer segment contributes nearly 50% of total sales**, making it the most valuable customer segment.
+
+---
+
+## 🌎 Sales by Region
+
+| Region  | Sales     |
+| ------- | --------- |
+| East    | **0.64M** |
+| West    | **0.62M** |
+| Central | **0.49M** |
+| South   | **0.37M** |
+
+The **East and West regions dominate sales**, while the South region contributes the least.
+
+---
+
+# 🎯 Target Achievement & Benchmark Analysis
+
+Overall **Target Achievement:** **104.08%**
+
+| Region  | Achievement |
+| ------- | ----------- |
+| Central | **102.71%** |
+| East    | **102.87%** |
+| South   | **109.87%** |
+| West    | **88.15%**  |
+
+Three regions **achieved their targets**, while the **West region underperformed**.
+
+**Total Target Gap:** **+82.95K**
+
+---
+
+# 🔮 What-If Profit Simulation
+
+The dashboard includes a **What-If parameter** allowing users to simulate discounts and observe their impact on profitability.
+
+Current results show:
+
+* **Total Profit:** **0.29M**
+* **Predicted Profit after Discount Simulation:** **0.26M**
+
+The simulation indicates that **increasing discounts reduces overall profitability**, which is highlighted by the insight:
+
+> "Simulation reduces profit"
+
+This feature helps evaluate **pricing strategies before implementing them in real business scenarios**.
+
+---
+
+# 📊 Pareto Analysis (Customer Contribution)
+
+The dashboard includes a **Pareto (80/20) analysis** to determine how much revenue is generated by top customers.
+
+Key finding:
+
+* A **small percentage of customers contribute a majority of total revenue**
+
+This insight helps the business:
+
+* Identify **high-value customers**
+* Focus on **customer retention strategies**
 
 ---
 
@@ -130,58 +149,75 @@ This helps identify **high-value customers** driving the majority of revenue.
 
 The second dashboard focuses on **customer behavior and segmentation**.
 
----
+### Customer Metrics
 
-## 🧠 RFM Customer Segmentation
+* **Total Customers:** **793**
+* **Revenue per Customer:** **2.67K**
+* **Repeat Customers:** **788**
 
-Customers were segmented using **RFM Analysis**:
-
-* **Recency** – Sales in last 180 days
-* **Frequency** – Number of purchases
-* **Monetary Value** – Total sales value
-
-Customers were categorized into segments such as:
-
-* High Value Customers
-* Medium Value Customers
-* Low Value Customers
-
-This helps identify **loyal and profitable customer groups**.
+This indicates **very high customer retention**.
 
 ---
 
-## 🆕 New Customer Analysis
+# 🧠 RFM Customer Segmentation
 
-The dashboard analyzes:
+Customers were segmented using **RFM Analysis (Recency, Frequency, Monetary Value)**.
 
-* Number of **new customers in 2021**
-* Sales generated by new customers
-* Quantity purchased
-* Discounts offered
+### Customer Segments
 
-Helps evaluate **customer acquisition effectiveness**.
+| Segment      | Customers | Percentage |
+| ------------ | --------- | ---------- |
+| High Value   | **446**   | **56.24%** |
+| Medium Value | **318**   | **40.1%**  |
+| Low Value    | **29**    | **3.66%**  |
+
+**High-value customers generate the majority of revenue**, highlighting the importance of retention strategies.
 
 ---
 
-## 🏆 Top Salesperson Performance
+# 📈 Customer Strategy Segmentation
 
-Identifies **Top 5 Salespersons**:
+Customers were further categorized based on marketing strategies:
 
-* At **State Level**
-* At **City Level**
+| Strategy            | Customers | Percentage |
+| ------------------- | --------- | ---------- |
+| Growth Opportunity  | **422**   | **53.22%** |
+| Retain VIP          | **273**   | **34.43%** |
+| Reactivation Target | **98**    | **12.36%** |
 
-Metrics shown:
+This segmentation helps businesses plan **targeted marketing campaigns**.
 
-* Total Sales Generated
-* Average Discount Provided
+---
 
-This helps recognize **high-performing sales employees**.
+# 🆕 New Customer Analysis (2021)
+
+In **2021**, the company acquired:
+
+* **11 new customers**
+* **7.36K in sales**
+* **148 products purchased**
+
+This helps measure **customer acquisition performance**.
+
+---
+
+# 🏆 Top Salesperson Analysis
+
+The dashboard identifies **Top 5 performing salespersons across segments, states, and cities**.
+
+Metrics evaluated include:
+
+* Sales generated by salesperson
+* Average discount provided
+* Salesperson ranking within their region
+
+This analysis helps management **recognize top performers and monitor discount strategies**.
 
 ---
 
 # 📊 Data Model
 
-A **star schema** data model was implemented in Power BI.
+A **Star Schema Data Model** was implemented in Power BI.
 
 ### Fact Table
 
@@ -195,33 +231,35 @@ A **star schema** data model was implemented in Power BI.
 * Salesperson
 * Targets
 
-Relationships were created using relevant keys to enable efficient reporting.
-
----
-
-# 📌 Key Business Insights
-
-Some of the key insights generated from this analysis include:
-
-* A small percentage of customers contribute to a **large portion of total revenue**
-* Certain regions consistently **fail to meet sales targets**
-* Heavy discounts significantly reduce **profit margins**
-* High-value customers identified through **RFM analysis** drive major sales
-* Product returns are concentrated in **specific categories and regions**
-
-These insights can help the company improve **sales strategy, pricing policies, and customer targeting**.
+Relationships were created using relevant keys to enable efficient reporting and filtering.
 
 ---
 
 # 🛠 Tools & Technologies
 
-* Power BI
-* Power Query
-* DAX
-* Data Modeling
-* RFM Customer Segmentation
-* What-If Parameter Analysis
-* Pareto Analysis
+* **Power BI**
+* **Power Query**
+* **DAX**
+* **Data Modeling**
+* **RFM Customer Segmentation**
+* **What-If Parameter Analysis**
+* **Pareto Analysis**
+
+---
+
+# 📌 Key Business Insights
+
+Key insights derived from the analysis:
+
+* The company generated **2.12M in total sales** with **104% target achievement**
+* **Consumer segment contributes the highest revenue (1.06M)**
+* **Technology category leads product sales (0.76M)**
+* **East and West regions drive the majority of revenue**
+* **High-value customers represent 56% of the customer base**
+* **Increasing discounts negatively impacts profit**
+* **A small percentage of customers generate a large portion of revenue**
+
+These insights support **better pricing strategies, customer targeting, and regional sales optimization**.
 
 ---
 
